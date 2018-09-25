@@ -18,7 +18,7 @@ const mapToProducts = (productItems: any[]): Items[] => {
 const mapToProductList = (productItem : any): Items => {
 
     return{
-        date : productItem.date,
+        duedate : productItem.duedate,
             name : productItem.name
             
     };

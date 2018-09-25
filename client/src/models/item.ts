@@ -1,4 +1,4 @@
 export class Items{
     public name: string;
-    public date: Date;
+    public duedate: Date;
 };

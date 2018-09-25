@@ -3,7 +3,7 @@ const schema = mongoose.Schema;
 
 //Create Schema
 const ItemSchema = new schema({
-    date:Date,
+    duedate:Date,
     name:String
 
 });

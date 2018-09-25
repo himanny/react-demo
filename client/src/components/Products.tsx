@@ -29,10 +29,15 @@ export class Products extends React.Component<{},IState>{
     public render() {
         return (        
         <div >
-     <table><tbody>
+     <table>
+     <tr>
+   <th>Product Type</th>
+   <th>Payment Due Date</th>
+ </tr>
+         <tbody>
          
                  {this.state.products.map((user, i) => {
-                                     return <tr key={i}> <td> {user.name} </td> <td> {user.date} </td></tr> 
+                                     return <tr key={i}> <td> {user.name} </td> <td> {user.duedate} </td></tr> 
                                         })
                                     }
            </tbody></table>
