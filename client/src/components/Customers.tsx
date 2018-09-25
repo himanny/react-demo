@@ -11,7 +11,7 @@ export class Customer extends React.Component<{},{}>{
     public render() {
         return (        
         <div >
-    <h1> Customers Page</h1>
+    <h1> Payment Page</h1>
         </div>
 
 
