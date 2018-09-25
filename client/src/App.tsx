@@ -17,19 +17,20 @@ export class App extends React.Component {
     return (
       <div>
       <p> Welcome to React </p>
-<Router history={browserHistory}>
-<div>
-  <ul>
-    <li className ="topnav" > <Link to={'/'}> Outstanding Bills </Link> </li>
-    <li> <Link to={'/Customer'}> Payments </Link> </li>
-    <li> <Link to={'/Order'}> Rate Set Rollover </Link> </li>
-  </ul>
-  <hr />
-          <Route path="/" component = {Products} />
-          <Route path="/Customer" component = {Customer}/> 
-          <Route path="/Order" component = {Order}/> 
-          </div>
-</Router>
+          <Router history={browserHistory}>
+                <div>
+                    <ul>
+                          <li> <Link to={'/'}> Outstanding Bills </Link> </li>
+                          <li> <Link to={'/Customer'}> Payments </Link> </li>
+                          <li> <Link to={'/Order'}> Rate Set Rollover </Link> </li>
+                    </ul>
+                <hr />
+                
+                        <Route path={'/'} exact={true} component = {Products} />
+                        <Route path={'/Customer'} component = {Customer}/> 
+                        <Route path={'/Order'} component = {Order}/> 
+                 </div>
+          </Router>
 
       </div>
     );
